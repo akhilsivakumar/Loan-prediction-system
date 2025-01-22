@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Eligibility Prediction</h1>
+        <form id="loanForm">
+            <label for="credit_score">Credit Score:</label>
+            <input type="number" id="credit_score" name="credit_score" required>
+
+            <label for="loan_amount">Loan Amount:</label>
+            <input type="number" id="loan_amount" name="loan_amount" required>
+
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" name="salary" required>
+
+            <label for="marital_status">Marital Status:</label>
+            <select id="marital_status" name="marital_status">
+                <option value="Married">Married</option>
+                <option value="Single">Single</option>
+            </select>
+
+            <label for="employment">Employment Status:</label>
+            <select id="employment" name="employment">
+                <option value="Employed">Employed</option>
+                <option value="Self-Employed">Self-Employed</option>
+                <option value="Unemployed">Unemployed</option>
+            </select>
+
+            <label for="property_area">Property Area:</label>
+            <select id="property_area" name="property_area">
+                <option value="Urban">Urban</option>
+                <option value="Semiurban">Semiurban</option>
+                <option value="Rural">Rural</option>
+            </select>
+
+            <button type="submit">Predict Eligibility</button>
+        </form>
+
+        <div id="result">
+            <h2>Loan Eligibility: <span id="eligibilityResult">Pending</span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
