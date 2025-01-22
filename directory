@@ -1,0 +1,23 @@
+Loan-Prediction-System
+│
+├── data/
+│   ├── train.csv  # Contains your sample data
+│   ├── test.csv   # Split for testing or new predictions
+│   └── README.md
+│
+├── notebooks/
+│   ├── exploratory_data_analysis.ipynb
+│   ├── model_training.ipynb
+│   └── README.md
+│
+├── src/
+│   ├── preprocess.py
+│   ├── train_model.py
+│   ├── predict.py
+│   └── __init__.py
+│
+├── requirements.txt
+├── README.md
+├── app.py
+├── config.yaml
+└── .gitignore
